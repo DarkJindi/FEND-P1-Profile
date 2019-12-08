@@ -1,0 +1,95 @@
+/*CSS Variables*/
+:root {
+  --primary: gainsboro;
+  --dark: darkslategray;
+  --light: AntiqueWhite;
+}
+.folio {
+  display: grid;
+  grid-gap: 40px;
+}
+html {
+  box-sizing: border-box;
+}
+body {
+  font-family: Tahoma, Geneva, sans-serif;
+  background: var(--dark);
+  margin: 30px 50px;
+}
+img {
+  max-width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto
+}
+h1 {
+  color: var(--light);
+}
+.header {
+  display: flex;
+  border-bottom: 2px solid #12ccadd0;
+}
+.raad {
+  padding-bottom: 20px;
+  height: 100px;
+  width: 100px;
+}
+.name {
+  color: var(--light);
+  margin-left: auto;
+  text-align: right;
+  text-transform: uppercase;
+}
+.name1 {
+  font-weight: 300;
+  letter-spacing: .125em;
+}
+.name2 {
+  font-size: 16px;
+  text-align: right;
+}
+#featured {
+  text-align: left;
+  color: var(--light);
+}
+#grid3box {
+  display: grid;
+  grid-gap: 40px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+#item,
+a,
+h3,
+p {
+  text-align: center;
+}
+#item,
+h3 {
+  font-weight: 600;
+  color: var(--light);
+}
+#item,
+p {
+  color: var(--light);
+  font-size: 14px;
+}
+/* ------ Media Queries ----- */
+@media only screen and (max-width: 600px) {
+  .header {
+    display: inline-block;
+  }
+  .name {
+    text-align: center;
+  }
+  .raad {
+    text-align: center;
+    margin: 0 auto;
+  }
+  .name2 {
+    text-align: center;
+  }
+  #item,
+  h1 {
+    font-size: 25px;
+  }
+}
